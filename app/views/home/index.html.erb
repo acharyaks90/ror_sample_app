@@ -1,6 +1,20 @@
 <h1>Home#index</h1>
 <p>Welcome!</p>
 List of Question
+
+<% @questions.each do |q| %>
+<div class="panel panel-success">
+<div class="panel-body">
+<span class="text-primary"><%= q.email %> </span>
+<span class="text-primary"><%= q.body %> </span>
+<span class="text-primary"><%= time_ago_in_words  q.created_at %> ago </span>
+<img src="<%= q.gravatar %>">
+<a href="/questions/<%= q.id %>" class="btn btn-success btn-xs"> View Answer </a>
+</div>
+</div>
+<% end %>
+
+
 <a href="/about/question " class="btn btn-warning btn-xs" > Add Questions  </a>
 
-<a href="/questions/12" class="btn btn-success btn-xs"> View Answer </a>
+
