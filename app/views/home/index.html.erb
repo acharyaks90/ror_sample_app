@@ -1,5 +1,5 @@
 <h1>Home</h1>
-<p>Welcome!</p>
+<p>Welcome!<%= session[:current_user_email] || 'No email saved' %></p>
 List of Question
 
 <% @questions.each do |q| %>
