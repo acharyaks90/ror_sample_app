@@ -36,3 +36,7 @@ Sucker puch
 mODEL.delete_all
 
 rails g mailer main_mailer notify_question_mailer
+
+heroku run rails console
+heroku pg:psql
+herkou      pg : info
