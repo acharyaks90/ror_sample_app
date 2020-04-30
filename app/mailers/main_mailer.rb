@@ -5,9 +5,9 @@ class MainMailer < ApplicationMailer
   #
   #   en.main_mailer.notify_question_mailer.subject
   #
-  def notify_question_mailer
+  def notify_question_mailer(answer)
     @greeting = "Hi"
-
-    mail to: "to@example.org"
+    @answer = answer
+    mail to: answer.question.email, from: answer.email
   end
 end
