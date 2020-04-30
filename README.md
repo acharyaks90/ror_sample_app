@@ -34,3 +34,5 @@ Active job
 Sucker puch
 
 mODEL.delete_all
+
+rails g mailer main_mailer notify_question_mailer
