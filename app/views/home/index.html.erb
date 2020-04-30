@@ -13,7 +13,9 @@ List of Question
 </div>
 </div>
 <% end %>
-
+<% if @question.empty? %>
+    <div> No questions available</div>
+<% end %>
 
 <a href="/about/question " class="btn btn-warning btn-xs" > Add Questions  </a>
 

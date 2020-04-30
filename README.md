@@ -22,3 +22,15 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+Informative ui 
+Session
+
+preparing and sending mails
+Test driven development 
+
+Sleep
+Active job
+Sucker puch
+
+mODEL.delete_all
