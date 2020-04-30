@@ -13,11 +13,12 @@ Answers
 <button class="btn btn-success"> Submit a new answer </button>
 
 <%= render 'home/new_answer' %>
-
+<% @question.answers.each do |answer|%>
 <h1>Answer </h1>
 
-<span>User email : anil@gmail.com </span>
+<span>User email : <%= answer.email%> </span>
 
 <img src="">
 
-<p>Answer Details </p>
+<p>Answer Details: <%= answer.body%>  </p>
+<% end %>
