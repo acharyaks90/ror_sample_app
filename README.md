@@ -40,3 +40,16 @@ rails g mailer main_mailer notify_question_mailer
 heroku run rails console
 heroku pg:psql
 herkou      pg : info
+bundle update
+
+rails_12factor
+
+dev
+byebug
+webconsole
+spring
+
+gemfile
+
+rvm install
+
